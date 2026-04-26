@@ -1,22 +1,29 @@
-# Soroban Project
+# TuitionLink
+Direct tuition payments on Stellar with instant on-chain receipts.
 
-## Project Structure
+## Problem
+A working student in Quezon City must queue or pay high bank fees to settle tuition, risking late penalties.
 
-This repository uses the recommended structure for a Soroban project:
+## Solution
+Students pay tuition using USDC on Stellar, and a Soroban contract records the payment and issues a verifiable receipt.
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Timeline
+- Day 1–2: Smart contract
+- Day 3–4: Frontend + wallet
+- Day 5: Demo + polish
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Stellar Features Used
+- USDC payments
+- Soroban smart contracts
+- Trustlines
+- Tokenized receipts
+
+## Vision and Purpose
+Enable schools to accept instant, low-cost digital payments while giving students verifiable financial records.
+
+## Prerequisites
+- Rust
+- Soroban CLI
+
+## Build
+https://stellar.expert/explorer/testnet/tx/65974c306430eea8223a42fcc211bec0aa8b606461992354478e201938e0a101
